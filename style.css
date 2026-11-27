@@ -1,413 +1,427 @@
-/* This file controls the colors, sizes, and layout of the page. */
+/* This file controls the colors, sizes, and layout of the pages. */
 
-/* Set the main colors and font for the whole page. */
+/* These rules set the default look of the whole website. */
 body {
-  margin: 0;
-  background-color: #101214;
-  color: #f2eee6;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0; /* Removes the browser's default space around the page. */
+  background-color: #101214; /* Gives the page a very dark background. */
+  color: #f2eee6; /* Makes normal text a warm off-white color. */
+  font-family: Arial, sans-serif; /* Uses Arial, or a similar simple font. */
+  line-height: 1.6; /* Adds vertical space between lines of text. */
 }
 
-/* Give the top and bottom of the page a dark background. */
+/* These rules style the top and bottom bars of each page. */
 header,
 footer {
-  padding: 18px 8%;
-  background-color: #171a1c;
+  padding: 18px 8%; /* Adds space inside the bars: top/bottom, then left/right. */
+  background-color: #171a1c; /* Gives both bars a slightly lighter dark color. */
 }
 
-/* Keep the header visible at the top and put its title and links on one line. */
+/* Keep the header visible and arrange its title and links. */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #35383a;
+  position: sticky; /* Keeps the header on screen while the page scrolls. */
+  top: 0; /* Sticks the header to the very top of the browser window. */
+  z-index: 10; /* Places the header above the page content. */
+  display: flex; /* Places the title and navigation in a row. */
+  align-items: center; /* Lines up the title and links vertically. */
+  justify-content: space-between; /* Pushes the title left and the links right. */
+  border-bottom: 1px solid #35383a; /* Adds a thin line under the header. */
 }
 
-/* Style the project title. */
+/* Style the project name in the header. */
 header h1 {
-  margin: 0;
-  color: #d7aa64;
-  font-size: 22px;
-  letter-spacing: 3px;
+  margin: 0; /* Removes the heading's default outside space. */
+  color: #d7aa64; /* Makes the project name gold. */
+  font-size: 22px; /* Sets the project name text size. */
+  letter-spacing: 3px; /* Adds space between the letters. */
 }
 
-/* Style the navigation links. */
+/* Style every link inside the navigation menu. */
 nav a {
-  margin-left: 20px;
-  color: #e8e1d5;
-  text-decoration: none;
+  margin-left: 20px; /* Adds space to the left of each link. */
+  color: #e8e1d5; /* Makes the links a light cream color. */
+  text-decoration: none; /* Removes the normal underline from links. */
 }
 
-/* Make a link gold when the mouse is over it. */
+/* Change links to gold when the pointer is over them. */
 nav a:hover,
 footer a:hover {
-  color: #d7aa64;
+  color: #d7aa64; /* Highlights the link in gold. */
 }
 
-/* Keep the main content from getting too wide. */
+/* Set the width and position of the main page content. */
 main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 24px;
+  max-width: 1100px; /* Stops the content from becoming too wide. */
+  margin: 0 auto; /* Centers the main content horizontally. */
+  padding: 24px; /* Adds space between the content and the page edge. */
 }
 
-/* Style all the main page sections like simple panels. */
+/* Give every section a panel style. */
 section {
-  margin-bottom: 28px;
-  padding: 28px;
-  border: 1px solid #34383a;
-  border-radius: 8px;
-  background-color: #191d1f;
+  margin-bottom: 28px; /* Adds space below each section. */
+  padding: 28px; /* Adds space inside each section. */
+  border: 1px solid #34383a; /* Draws a thin outline around the section. */
+  border-radius: 8px; /* Rounds the section's corners. */
+  background-color: #191d1f; /* Gives the section a dark panel background. */
 }
 
-/* Leave space above a section when a page link jumps to it. */
+/* Leave room for the sticky header when a link jumps to a section. */
 section[id] {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 100px; /* Stops the header from covering the section title. */
 }
 
-/* Make the first section feel like a large game introduction. */
+/* Make the welcome section look like a large game introduction. */
 .welcome {
-  padding: 0 0 32px;
-  overflow: hidden;
-  background-color: #171a1c;
+  padding: 0 0 32px; /* Removes top/side padding and keeps space at the bottom. */
+  overflow: hidden; /* Hides anything that sticks past the rounded edges. */
+  background-color: #171a1c; /* Makes this panel match the header color. */
 }
 
-/* Use a wide picture at the top of the introduction. */
+/* Make the welcome picture fill the top of its section. */
 .welcome img {
-  display: block;
-  width: 100%;
-  max-height: 440px;
-  object-fit: cover;
+  display: block; /* Removes the small gap browsers put below images. */
+  width: 100%; /* Stretches the image across the section. */
+  max-height: 440px; /* Stops the image from becoming too tall. */
+  object-fit: cover; /* Crops the image neatly if its shape does not match. */
 }
 
-/* Keep the introduction text away from the edges. */
+/* Keep the welcome heading, text, and button away from the edges. */
 .welcome h2,
 .welcome p,
 .welcome .button {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 32px; /* Adds space to the left of each welcome element. */
+  margin-right: 32px; /* Adds space to the right of each welcome element. */
 }
 
-/* Style the small gold text above the main heading. */
+/* Style the small gold label used above section headings. */
 .small-title {
-  margin-top: 28px;
-  color: #d7aa64;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  margin-top: 28px; /* Adds space above the label. */
+  color: #d7aa64; /* Makes the label gold. */
+  font-size: 13px; /* Makes the label smaller than normal text. */
+  font-weight: bold; /* Makes the label thicker and easier to notice. */
+  letter-spacing: 2px; /* Spreads out the label's letters. */
 }
 
-/* Make the main welcome heading large and dramatic. */
+/* Make the welcome heading large and dramatic. */
 .welcome h2 {
-  margin-top: 8px;
-  margin-bottom: 10px;
-  font-size: 42px;
-  line-height: 1.15;
+  margin-top: 8px; /* Adds a small gap above the heading. */
+  margin-bottom: 10px; /* Adds a small gap below the heading. */
+  font-size: 42px; /* Makes the welcome heading large. */
+  line-height: 1.15; /* Keeps the two heading lines close together. */
 }
 
-/* Make the welcome paragraph easier to read. */
+/* Make welcome paragraph text narrower and softer in color. */
 .welcome p:not(.small-title) {
-  max-width: 600px;
-  color: #c5c0b8;
+  max-width: 600px; /* Keeps long lines easy to read. */
+  color: #c5c0b8; /* Makes the paragraph a softer gray. */
 }
 
-/* Make the embedded trailer wide and easy to watch. */
+/* Make the embedded trailer fill its section. */
 #trailer iframe {
-  display: block;
-  width: 100%;
-  height: 480px;
-  border: 0;
-  border-radius: 6px;
-  background-color: #000000;
+  display: block; /* Places the video on its own line. */
+  width: 100%; /* Makes the video as wide as the section. */
+  height: 480px; /* Sets the video's height on larger screens. */
+  border: 0; /* Removes the browser's default iframe border. */
+  border-radius: 6px; /* Rounds the video corners. */
+  background-color: #000000; /* Shows black behind the video while it loads. */
 }
 
-/* Keep a direct YouTube link below the player as a backup. */
+/* Make the backup YouTube link gold. */
 .trailer-link a {
-  color: #d7aa64;
+  color: #d7aa64; /* Highlights the link in the gold accent color. */
 }
 
-/* Style the link so it looks like a button. */
+/* Make this link look like a button. */
 .button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 16px;
-  border-radius: 4px;
-  background-color: #d7aa64;
-  color: #171512;
-  font-weight: bold;
-  text-decoration: none;
+  display: inline-block; /* Lets the link use button-like padding and spacing. */
+  margin-top: 10px; /* Adds space above the button. */
+  padding: 10px 16px; /* Adds space inside the button. */
+  border-radius: 4px; /* Rounds the button corners. */
+  background-color: #d7aa64; /* Gives the button a gold background. */
+  color: #171512; /* Makes the button text dark. */
+  font-weight: bold; /* Makes the button text thicker. */
+  text-decoration: none; /* Removes the link underline. */
 }
 
-/* Make the button a little brighter when the mouse is over it. */
+/* Brighten buttons when the pointer is over them. */
 .button:hover,
 button:hover {
-  background-color: #edc77f;
+  background-color: #edc77f; /* Changes the button to a lighter gold. */
 }
 
-/* Give the section headings a warm accent color. */
+/* Set the color of all section headings. */
 section h2 {
-  color: #f2eee6;
+  color: #f2eee6; /* Makes section headings warm white. */
 }
 
 /* Style the game fact button. */
 button {
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 4px;
-  background-color: #d7aa64;
-  color: #171512;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 14px; /* Adds space inside the button. */
+  border: 0; /* Removes the browser's default button border. */
+  border-radius: 4px; /* Rounds the button corners. */
+  background-color: #d7aa64; /* Gives the button a gold background. */
+  color: #171512; /* Makes the button text dark. */
+  font-size: 15px; /* Sets the button text size. */
+  font-weight: bold; /* Makes the button text bold. */
+  cursor: pointer; /* Shows a hand cursor to signal that it can be clicked. */
 }
 
-/* Put the game fact in its own small panel. */
+/* Put the changing game fact in its own panel. */
 #gameFact {
-  padding: 12px;
-  border-left: 3px solid #d7aa64;
-  background-color: #222729;
-  color: #d3cec5;
+  padding: 12px; /* Adds space around the fact text. */
+  border-left: 3px solid #d7aa64; /* Adds a gold line to the left of the fact. */
+  background-color: #222729; /* Gives the fact a lighter dark background. */
+  color: #d3cec5; /* Makes the fact text a soft light gray. */
 }
 
 /* Make guide pictures fill the available width. */
 .wide-picture {
-  display: block;
-  width: 100%;
-  max-height: 360px;
-  border-radius: 6px;
-  object-fit: cover;
+  display: block; /* Places the picture on its own line. */
+  width: 100%; /* Stretches the picture across its section. */
+  max-height: 360px; /* Stops the picture from becoming too tall. */
+  border-radius: 6px; /* Rounds the picture corners. */
+  object-fit: cover; /* Crops the picture neatly if needed. */
 }
 
 /* Put related information cards beside each other. */
 .info-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  display: flex; /* Arranges the cards in a row. */
+  flex-wrap: wrap; /* Moves cards to another row when they do not fit. */
+  gap: 14px; /* Adds space between the cards. */
 }
 
-/* Give every information card its own border and background. */
+/* Give each information card its own border and background. */
 .info-card {
-  box-sizing: border-box;
-  flex: 1 1 220px;
-  padding: 14px;
-  border: 1px solid #45494a;
-  border-radius: 6px;
-  background-color: #222729;
+  box-sizing: border-box; /* Includes padding and borders in the card's width. */
+  flex: 1 1 220px; /* Lets cards grow, shrink, and start around 220 pixels wide. */
+  padding: 14px; /* Adds space inside the card. */
+  border: 1px solid #45494a; /* Draws a thin outline around the card. */
+  border-radius: 6px; /* Rounds the card corners. */
+  background-color: #222729; /* Gives the card a lighter dark background. */
 }
 
-/* Keep the pictures inside the information cards. */
+/* Keep pictures inside the information cards. */
 .info-card img {
-  display: block;
-  width: 100%;
-  height: 150px;
-  border-radius: 4px;
-  object-fit: cover;
+  display: block; /* Removes the small gap below the image. */
+  width: 100%; /* Makes the image as wide as its card. */
+  height: 150px; /* Gives card pictures the same height. */
+  border-radius: 4px; /* Rounds the image corners. */
+  object-fit: cover; /* Crops the image to fill its space. */
 }
 
+/* Make information card headings gold. */
 .info-card h3 {
-  color: #d7aa64;
+  color: #d7aa64; /* Uses the site's gold accent color. */
 }
 
+/* Make information card paragraphs softer in color. */
 .info-card p {
-  color: #c5c0b8;
+  color: #c5c0b8; /* Uses a muted gray for the paragraph text. */
 }
 
-/* Put the picture cards next to each other. */
+/* Put the gallery picture cards next to each other. */
 .picture-card {
-  display: inline-block;
-  width: 30%;
-  margin: 10px 1%;
-  overflow: hidden;
-  vertical-align: top;
-  border: 1px solid #34383a;
-  border-radius: 6px;
-  background-color: #222729;
+  display: inline-block; /* Allows cards to sit on the same line. */
+  width: 30%; /* Makes each card about one third of the available row. */
+  margin: 10px 1%; /* Adds space above, below, and beside each card. */
+  overflow: hidden; /* Keeps the image inside the card's rounded corners. */
+  vertical-align: top; /* Aligns the tops of cards if their text differs. */
+  border: 1px solid #34383a; /* Draws a thin outline around each card. */
+  border-radius: 6px; /* Rounds the card corners. */
+  background-color: #222729; /* Gives the card a lighter dark background. */
 }
 
-/* Make each picture fill its card. */
+/* Make each gallery picture fill its card. */
 .picture-card img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  display: block; /* Removes the small gap below the image. */
+  width: 100%; /* Makes the image as wide as the card. */
+  height: 180px; /* Gives all gallery images the same height. */
+  object-fit: cover; /* Crops the image to fill the card neatly. */
 }
 
-/* Fade the picture a little when the mouse is over the clickable image. */
+/* Fade a clickable gallery image when the pointer is over it. */
 .picture-card a:hover img {
-  opacity: 0.8;
+  opacity: 0.8; /* Makes the image slightly see-through. */
 }
 
-/* Style the text underneath each picture. */
+/* Style the text underneath each gallery picture. */
 .picture-card figcaption {
-  padding: 10px 12px;
-  color: #d7aa64;
+  padding: 10px 12px; /* Adds space around the caption text. */
+  color: #d7aa64; /* Makes the caption gold. */
 }
 
-/* Give each item in the list its own line and a little space. */
+/* Indent item and map lists so their list markers have room. */
 .item-list,
 .map-list {
-  padding-left: 24px;
+  padding-left: 24px; /* Moves list contents slightly to the right. */
 }
 
+/* Arrange item cards in rows and remove normal list dots. */
 .item-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  padding: 0;
-  list-style: none;
+  display: flex; /* Places item cards beside each other. */
+  flex-wrap: wrap; /* Moves cards to another row when needed. */
+  gap: 14px; /* Adds space between item cards. */
+  padding: 0; /* Removes the list's normal left indent. */
+  list-style: none; /* Hides the normal bullet points. */
 }
 
+/* Style each row in the item and map lists. */
 .item-list li,
 .map-list li {
-  margin-bottom: 8px;
-  padding: 10px;
-  border-left: 2px solid #d7aa64;
-  background-color: #222729;
+  margin-bottom: 8px; /* Adds space below each list row. */
+  padding: 10px; /* Adds space inside each list row. */
+  border-left: 2px solid #d7aa64; /* Adds a gold line to the row's left side. */
+  background-color: #222729; /* Gives the row a lighter dark background. */
 }
 
-/* Each item uses part of the row, so several cards fit next to each other. */
+/* Make each item use part of a row so several fit side by side. */
 .item-card {
-  box-sizing: border-box;
-  flex: 1 1 28%;
-  margin: 0;
-  padding: 20px 12px;
-  border: 1px solid #45494a;
-  border-radius: 6px;
-  text-align: center;
+  box-sizing: border-box; /* Counts padding and borders as part of the card width. */
+  flex: 1 1 28%; /* Lets each card grow, shrink, and start at about 28% width. */
+  margin: 0; /* Removes extra list item spacing. */
+  padding: 20px 12px; /* Adds space inside the item card. */
+  border: 1px solid #45494a; /* Draws an outline around the item card. */
+  border-radius: 6px; /* Rounds the card corners. */
+  text-align: center; /* Centers the icon and words. */
 }
 
+/* Highlight an item card when the pointer is over it. */
 .item-card:hover {
-  border-color: #d7aa64;
+  border-color: #d7aa64; /* Changes the card outline to gold. */
 }
 
-/* Show a larger item picture at the top of each card. */
+/* Show a large round item picture at the top of each card. */
 .item-icon {
-  display: block;
-  width: 84px;
-  height: 84px;
-  margin: 0 auto 12px;
-  padding: 8px;
-  border-radius: 50%;
-  background-color: #303638;
-  object-fit: contain;
+  display: block; /* Places the icon on its own line. */
+  width: 84px; /* Sets the icon width. */
+  height: 84px; /* Sets the icon height. */
+  margin: 0 auto 12px; /* Centers the icon and adds space below it. */
+  padding: 8px; /* Adds room between the icon and its background. */
+  border-radius: 50%; /* Turns the icon background into a circle. */
+  background-color: #303638; /* Gives the icon a lighter dark background. */
+  object-fit: contain; /* Shows the whole icon without cropping it. */
 }
 
-/* Put the short item description on its own line. */
+/* Put each item's name and description on separate lines. */
 .item-card strong,
 .item-card span {
-  display: block;
+  display: block; /* Makes each element start on a new line. */
 }
 
+/* Style the short item descriptions. */
 .item-card span {
-  margin-top: 5px;
-  color: #c5c0b8;
-  font-size: 14px;
+  margin-top: 5px; /* Adds a small gap above each description. */
+  color: #c5c0b8; /* Makes descriptions a muted gray. */
+  font-size: 14px; /* Makes descriptions slightly smaller. */
 }
 
-/* Make the map fit inside its section. */
+/* Make the map image and its caption look like one card. */
 .map-picture {
-  margin: 16px 0;
-  overflow: hidden;
-  border: 1px solid #45494a;
-  border-radius: 6px;
-  background-color: #222729;
+  margin: 16px 0; /* Adds space above and below the map card. */
+  overflow: hidden; /* Keeps the picture inside the rounded corners. */
+  border: 1px solid #45494a; /* Draws an outline around the map card. */
+  border-radius: 6px; /* Rounds the map card corners. */
+  background-color: #222729; /* Gives the caption area a dark background. */
 }
 
-/* This wrapper gives the markers a map-sized area to position themselves in. */
+/* Let map markers use this picture area as their positioning reference. */
 .map-image-container {
-  position: relative;
+  position: relative; /* Makes numbered markers position themselves over this area. */
 }
 
+/* Make the map image fill the map card. */
 .map-image-container img {
-  display: block;
-  width: 100%;
+  display: block; /* Removes the small gap below the image. */
+  width: 100%; /* Makes the map as wide as its card. */
 }
 
-/* Place each numbered circle on top of the map image. */
+/* Draw each numbered circle on top of the map. */
 .map-marker {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: #d7aa64;
-  color: #171512;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  position: absolute; /* Lets the marker sit at a chosen spot on the map. */
+  display: block; /* Gives the marker a set width and height. */
+  width: 30px; /* Sets the marker's inside width. */
+  height: 30px; /* Sets the marker's inside height. */
+  border: 2px solid white; /* Adds a white outline so the marker stands out. */
+  border-radius: 50%; /* Makes the marker round. */
+  background-color: #d7aa64; /* Makes the marker gold. */
+  color: #171512; /* Makes the number dark. */
+  font-weight: bold; /* Makes the number thicker. */
+  line-height: 30px; /* Centers the number vertically in the circle. */
+  text-align: center; /* Centers the number horizontally in the circle. */
+  transform: translate(-50%, -50%); /* Centers the circle on its left/top location. */
 }
 
+/* Style the map's caption. */
 .map-picture figcaption {
-  padding: 10px 12px;
-  color: #d7aa64;
+  padding: 10px 12px; /* Adds space around the caption text. */
+  color: #d7aa64; /* Makes the caption gold. */
 }
 
-/* Style the bottom of the page. */
+/* Add a line and soft text color to the bottom bar. */
 footer {
-  border-top: 1px solid #35383a;
-  color: #c5c0b8;
+  border-top: 1px solid #35383a; /* Draws a thin line above the footer. */
+  color: #c5c0b8; /* Makes footer text a muted gray. */
 }
 
+/* Set the normal color of links in the footer. */
 footer a {
-  color: #f2eee6;
+  color: #f2eee6; /* Makes footer links warm white. */
 }
 
-/* Adjust the page for smaller screens like phones. */
+/* These rules change the layout on phones and narrow screens. */
 @media (max-width: 650px) {
-  /* Stack the title and links on top of each other. */
+  /* Put the header title and navigation on separate lines. */
   header {
-    display: block;
-    padding: 16px 6%;
+    display: block; /* Changes the header from a row to normal stacked content. */
+    padding: 16px 6%; /* Reduces the header's side space on a phone. */
   }
 
-  /* Put a little space above the links. */
+  /* Add space between the title and the navigation. */
   nav {
-    margin-top: 12px;
+    margin-top: 12px; /* Moves the navigation down below the title. */
   }
 
+  /* Adjust spacing between navigation links on phones. */
   nav a {
-    margin-right: 16px;
-    margin-left: 0;
+    margin-right: 16px; /* Adds space after each link. */
+    margin-left: 0; /* Removes the desktop left spacing. */
   }
 
-  /* Use less space around the page content on a phone. */
+  /* Use less space around the main content on small screens. */
   main {
-    padding: 12px;
+    padding: 12px; /* Reduces the page edge space. */
   }
 
+  /* Reduce the inside space of sections on small screens. */
   section {
-    padding: 20px;
+    padding: 20px; /* Makes more room for content on a phone. */
   }
 
-  /* Use a shorter video player on a phone. */
+  /* Make the video shorter on a phone. */
   #trailer iframe {
-    height: 230px;
+    height: 230px; /* Fits the video better on a small screen. */
   }
 
+  /* Reduce the bottom space inside the welcome panel on phones. */
   .welcome {
-    padding: 0 0 24px;
+    padding: 0 0 24px; /* Keeps some space below the welcome text. */
   }
 
+  /* Move welcome text closer to the panel edges on a phone. */
   .welcome h2,
   .welcome p,
   .welcome .button {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 20px; /* Uses smaller left spacing on a phone. */
+    margin-right: 20px; /* Uses smaller right spacing on a phone. */
   }
 
+  /* Make the welcome heading smaller on a phone. */
   .welcome h2 {
-    font-size: 32px;
+    font-size: 32px; /* Prevents the heading from taking too much room. */
   }
 
-  /* Make the picture cards use the full width on a phone. */
+  /* Make each gallery picture use the full row on a phone. */
   .picture-card {
-    width: 100%;
-    margin: 10px 0;
+    width: 100%; /* Makes one picture card fit across the screen. */
+    margin: 10px 0; /* Keeps vertical space but removes side margins. */
   }
 }
