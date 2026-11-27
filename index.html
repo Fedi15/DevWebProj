@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page information that the browser uses. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayker Riz</title>
+
+  <!-- Show the Rayker Riz icon in the browser tab. -->
+  <link rel="icon" type="image/png" href="assets/rayker-riz-icon.png">
+
+  <!-- Load the CSS and JavaScript files for this page. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- The header is the top of the page. -->
+  <header>
+    <h1>Rayker Riz</h1>
+
+    <!-- Use these links to move around the home page or open another page. -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#trailer">Trailer</a>
+      <a href="items.html">Items</a>
+      <a href="map.html">Map</a>
+      <a href="#pictures">Pictures</a>
+    </nav>
+  </header>
+
+  <!-- The main section introduces the game. -->
+  <main>
+    <section class="welcome">
+      <img src="assets/hero.png" alt="Artwork from the Rayker Riz game">
+      <p class="small-title">A DARK FANTASY ACTION RPG</p>
+      <h2>Enter a world<br>of steel and fire</h2>
+      <p>Explore a dangerous world, improve your equipment, and prepare to meet powerful enemies.</p>
+      <a class="button" href="#about">Discover the game</a>
+    </section>
+
+    <!-- The video is hosted on YouTube, so this page does not need a large video file. -->
+    <section id="trailer">
+      <p class="small-title">OFFICIAL GAMEPLAY</p>
+      <h2>Watch the trailer</h2>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/lgPWzjXhh50"
+        title="Rayker Riz official gameplay trailer"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <p class="trailer-link">
+        If the video does not play,
+        <a href="https://www.youtube.com/watch?v=lgPWzjXhh50" target="_blank" rel="noopener">watch it on YouTube</a>.
+      </p>
+    </section>
+
+    <!-- This section explains the project. -->
+    <section id="about">
+      <h2>About the game</h2>
+      <p>Rayker Riz is an action role-playing game. The player travels through a desert, explores a dungeon, and fights enemies.</p>
+
+      <!-- Click this button to read the next game fact. -->
+      <button onclick="showGameFact()">Show the next game fact</button>
+      <p id="gameFact">Click the button to learn more about the game.</p>
+    </section>
+
+    <!-- These cards give a short overview and link to more details. -->
+    <section>
+      <p class="small-title">EXPLORE THE GAME</p>
+      <h2>Choose your next step</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <img src="assets/equipment.png" alt="Game equipment screen">
+          <h3>Items and combat</h3>
+          <p>See weapons, items, and simple combat tips.</p>
+          <a class="button" href="items.html">Explore items</a>
+        </article>
+        <article class="info-card">
+          <img src="assets/Crimson Canyon Ruins Arena Map.png" alt="Crimson Canyon map">
+          <h3>World and story</h3>
+          <p>Explore the map, find NPCs, and follow the route to the dungeon.</p>
+          <a class="button" href="map.html">Open the map</a>
+        </article>
+        <article class="info-card">
+          <img src="assets/boss.png" alt="The Golem boss">
+          <h3>Current game build</h3>
+          <p>Learn what is playable now and meet the Golem boss.</p>
+          <a class="button" href="map.html#development">See build details</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- This section shows three pictures from the game. -->
+    <section id="pictures">
+      <h2>Pictures</h2>
+
+      <figure class="picture-card">
+        <a href="assets/world-01.png" target="_blank" rel="noopener">
+          <img src="assets/world-01.png" alt="A desert landscape">
+        </a>
+        <figcaption>The desert</figcaption>
+      </figure>
+
+      <figure class="picture-card">
+        <a href="assets/combat.png" target="_blank" rel="noopener">
+          <img src="assets/combat.png" alt="A character preparing to fight">
+        </a>
+        <figcaption>Combat</figcaption>
+      </figure>
+
+      <figure class="picture-card">
+        <a href="assets/boss-entrance.png" target="_blank" rel="noopener">
+          <img src="assets/boss-entrance.png" alt="The entrance to a dungeon">
+        </a>
+        <figcaption>The dungeon</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- The footer is the bottom of the page. -->
+  <footer>
+    <p>Rayker Riz - Student Project</p>
+  </footer>
+</body>
+</html>

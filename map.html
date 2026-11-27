@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page information used by the browser. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Map - Rayker Riz</title>
+  <link rel="icon" type="image/png" href="assets/rayker-riz-icon.png">
+
+  <!-- Use the same style sheet as the home page. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- The same navigation appears on all three pages. -->
+  <header>
+    <h1>Rayker Riz</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#trailer">Trailer</a>
+      <a href="items.html">Items</a>
+      <a href="map.html">Map</a>
+      <a href="index.html#pictures">Gallery</a>
+    </nav>
+  </header>
+
+  <!-- This page shows a map and explains the numbered markers. -->
+  <main>
+    <section>
+      <p class="small-title">WORLD MAP</p>
+      <h2>Crimson Canyon Ruins</h2>
+      <p>Use the numbered markers to find important places in this area.</p>
+
+      <!-- The number markers are placed over the map with simple CSS. -->
+      <figure class="map-picture">
+        <div class="map-image-container">
+          <img src="assets/Crimson Canyon Ruins Arena Map.png" alt="Map of the Crimson Canyon Ruins area">
+          <span class="map-marker" style="left: 48%; top: 12%;">1</span>
+          <span class="map-marker" style="left: 11%; top: 43%;">2</span>
+          <span class="map-marker" style="left: 43%; top: 82%;">3</span>
+        </div>
+        <figcaption>Crimson Canyon Ruins Arena</figcaption>
+      </figure>
+
+      <!-- Each list number matches the same number on the map. -->
+      <ul class="map-list">
+        <li><strong>1. Northern ruins</strong> - NPCs and a Site of Grace</li>
+        <li><strong>2. Western approach</strong> - an NPC and a Site of Grace</li>
+        <li><strong>3. Southern gate</strong> - entrance to the dungeon</li>
+      </ul>
+    </section>
+
+    <!-- This section explains the people and early steps in the current build. -->
+    <section id="people">
+      <p class="small-title">YOUR FIRST STEPS</p>
+      <h2>Meet people along the way</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <img src="assets/main-menu.png" alt="Character creation screen">
+          <h3>Character and tutorial</h3>
+          <p>Create your character and learn the basic controls before entering the desert.</p>
+        </article>
+        <article class="info-card">
+          <img src="assets/site-of-grace.png" alt="A Site of Grace in the desert">
+          <h3>Merchant</h3>
+          <p>Find the merchant near one of the Sites of Grace.</p>
+        </article>
+        <article class="info-card">
+          <img src="assets/equipment.png" alt="Equipment menu used by the blacksmith">
+          <h3>Blacksmith</h3>
+          <p>The blacksmith is near a different Site of Grace.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- This short route guide explains how the places connect. -->
+    <section id="route">
+      <p class="small-title">THE CURRENT ROUTE</p>
+      <h2>From desert to dungeon</h2>
+      <p>The current playable journey starts with a short tutorial, crosses the desert, and leads to a dungeon and its boss.</p>
+      <ol class="map-list">
+        <li><strong>Start</strong> - create your character and learn the basics.</li>
+        <li><strong>Explore</strong> - travel through the desert and find the two Sites of Grace.</li>
+        <li><strong>Prepare</strong> - visit the merchant or blacksmith along the way.</li>
+        <li><strong>Continue</strong> - enter the dungeon and face the Golem boss.</li>
+      </ol>
+    </section>
+
+    <!-- The current route ends at this boss encounter. -->
+    <section id="boss">
+      <p class="small-title">THE DUNGEON BOSS</p>
+      <h2>Face the Golem</h2>
+      <img class="wide-picture" src="assets/boss.png" alt="The Golem boss encounter">
+      <p>The Golem is the featured boss in the current playable route. Prepare your equipment before entering the dungeon, watch the boss, and look for a safe moment to attack.</p>
+    </section>
+
+    <!-- This section describes the current development build. -->
+    <section id="development">
+      <p class="small-title">CURRENT DEVELOPMENT BUILD</p>
+      <h2>What is playable now?</h2>
+      <ul class="map-list">
+        <li><strong>Character and tutorial</strong> - create a character and learn the basics.</li>
+        <li><strong>Desert</strong> - explore the current region and find two Sites of Grace.</li>
+        <li><strong>NPC services</strong> - meet a merchant and a blacksmith near separate resting points.</li>
+        <li><strong>Dungeon and boss</strong> - follow the route into the dungeon and face its boss.</li>
+      </ul>
+      <p>The game is still being developed, so these areas and features may change.</p>
+    </section>
+  </main>
+
+  <!-- The footer links back to the home page. -->
+  <footer>
+    <p>Rayker Riz - Student Project</p>
+    <a href="index.html">Return home</a>
+  </footer>
+</body>
+</html>
